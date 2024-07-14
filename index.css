@@ -1,0 +1,879 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta Mahee", arial, sans-serif;
+}
+body {
+  font-family: "Abril Fatface", serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.background {
+  /* margin-top: 20px; */
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  /* gap: 50px; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+header {
+  margin-top: 60px;
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 22;
+  color: white;
+}
+header h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 3px;
+}
+header .menu {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 1;
+  /* background-color: aqua; */
+}
+.menu span {
+  color: white;
+  height: 14px;
+  width: 200px;
+  position: relative;
+  z-index: 22;
+}
+.section-one {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-one #bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content h1 {
+  position: absolute;
+  top: 17rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-family: "Abril Fatface", times, serif;
+  color: #fff;
+  line-height: 1;
+  font-weight: bold;
+}
+.content p {
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+}
+.content a {
+  padding: 15px 30px;
+  font-size: 15px;
+  line-height: 22.55px;
+  letter-spacing: 3px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: 0.5s;
+  outline: none;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.content a:hover {
+  transition: 0.5s;
+  color: #212529;
+}
+/* ------------------------------------- */
+.secondcontainer {
+  margin: 8rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 3rem;
+  width: 70%;
+  height: 100%;
+}
+.secondcontainer .secondimg {
+  width: 50%;
+}
+.secondcontainer .secondimg img {
+  width: 100%;
+  height: 100%;
+}
+.secondcontainer .secondcontent {
+  width: 50%;
+  height: 100%;
+}
+.secondcontent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+}
+.secondcontent h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.secondcontent p {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  color:  #6c757d;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.secondcontent p.secondsecbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.secondcontent p.secondsecbtn span:nth-child(1) {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(78, 75, 75, 0.406);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all ease-in-out;
+}
+.secondcontent p.secondsecbtn span i {
+  font-size: 1.5rem;
+  text-align: center;
+  transition: 0.5s all ease-in-out;
+  color:#65c0ba;
+}
+.secondcontent p.secondsecbtn span:nth-child(2) {
+  color: #65c0ba;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+.secondcontent .secondsecbtn:hover span:nth-child(1) {
+  color: black;
+  border-color: black;
+}
+.secondcontent .secondsecbtn:hover span:nth-child(1) i {
+  color: black;
+  border-color: black;
+}
+/* ----------------------------------------------- */
+.travelfooter {
+  margin-top: 20%;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+}
+.travelfooter h2 {
+  margin-top: 8rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.travelfooter p {
+  max-width: 40%;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 3.5rem;
+  color: #6c757d;
+}
+.footerrowone {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  /* background-color: rebeccapurple; */
+}
+.footerrowone .rowcardone {
+  min-width: 30%;
+  min-height: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+.rowcardone img {
+  width: 70px;
+}
+.rowcardone h3 {
+  font-family: "Abril Fatface", times, serif;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.2;
+}
+#pp {
+  margin-bottom: 1rem;
+  max-width: 300px;
+  min-height: 25%;
+  text-align: center;
+  color: #6c757d;
+}
+/* ----------------------------------- */
+.happycustomers{
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 8px;
+  background-color: #fafafa;
+
+}
+.happycustomers .customercontent{
+  width: 50%;
+  min-height:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin-top: 3.25em;
+  gap: 10px;
+}
+.customercontent h2{
+  font-size: 60px;
+    font-family: "Abril Fatface", times, serif;
+    line-height: 1;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+.happycustomers .allcards{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 46px;
+  /* background-color: aquamarine; */
+}
+.allcards .customercard{
+  width: 20%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* gap: 10px; */
+  /* background-color: aquamarine; */
+}
+.customercard img{
+  width: 70px;
+  border-radius: 50%;
+  outline: rgb(108, 99, 255) solid 1px !important;
+  unicode-bidi: isolate;
+
+}
+.customercard blockquote{
+  /* margin: 0 0 1rem; */
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  /* margin-inline-start: 40px; */
+  margin-inline-end: 40px;
+  /* unicode-bidi: isolate; */
+  font-weight: 200;
+  text-align: left;
+  /* align-self: start;l */
+}
+blockquote p{
+  font-style: italic;
+  line-height: 1.5;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-size: 20px;
+  color: #000;
+
+}
+.customercard p em{
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+}
+/* ------------------------------- */
+
+.toursection {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 8%;
+}
+
+.toursection .tourmanagement {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.tourmanagement .tourcontainercontent {
+  width: 90%;
+  min-height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* background-color: red; */
+}
+
+.tourcontainercontent .tourcontent {
+  width: 50%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+margin-top: 10%;
+  /* background-color: aqua; */
+}
+
+.tourcontent h2 {
+  font-size: 70px;
+  text-transform: capitalize;
+  font-family: "Abril Fatface", times, serif;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.tourcontent p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+.tourslidercontainer {
+  width: 80%;
+  min-height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* background-color: #65c0ba; */
+}
+
+.tourslidercontainer .tourslider {
+  width: 80%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+z-index: 22;
+
+}
+
+.slider {
+  min-width: 100%;
+  margin-bottom: 3rem !important;
+
+  transition: transform 0.5s ease;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgba(0,0,0,0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: white;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* -------------------- */
+.mountain {
+  width:100%;
+  min-height: 60vh;
+  position: relative;
+  margin-top: -500px;
+  padding-top: 500px;
+  overflow: hidden;
+  background: #65c0ba;
+  padding: 7em 0;
+}
+
+.mountain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  min-height: 70%;
+  width: 150%;
+  left: 60%;
+  background: #fff;
+  transform: rotate(-4deg) translateX(-50%) translateY(-100%);
+}
+
+.mountain::after {
+  content: "";
+  position: absolute;
+  bottom: -200px; /* Adjust this value as needed */
+  left: 0;
+  width: 100%;
+  min-height: 300px; /* Adjust the height of the curve */
+  background: #65c0ba; /* Same as .mountain background */
+  border-radius: 50%;
+}
+
+.mountaincontainer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+
+.mountaincontent {
+  width: 100%;
+  min-height: 30%;
+  margin-top: 25%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.mountaintitles {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+.mountaintitles h2{
+  font-size: 70px;
+  font-family: "Abril Fatface", times, serif;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.mountaintitles p{
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+text-align: center;
+width: 60%;
+}
+.blogcards{
+  width: 100%;
+  min-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.blogcards .blogone{
+  width:20% ;
+  min-height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  gap: 12px;
+}
+.blogone img{
+  width:100%;
+}
+.blogonecontent {
+  /* background: #fff;
+  padding: 2em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+}
+.blogonecontent span{
+  color: #ced4da;
+text-transform: uppercase;
+letter-spacing: .1em;
+align-self: self-start;
+}
+
+.blogonecontent h2 a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Abril Fatface", times, serif;
+  font-size: 26px;
+  margin-bottom: 1rem !important;
+  margin-top: 0 !important;
+}
+.blogonecontent a{
+  margin-bottom: 1.5rem !important;
+  transition: 0.5s;
+
+}
+.blogonecontent a:hover{
+  transition: 0.5s;
+  color:#65c0ba;
+}
+
+.blogonecontent p {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+}
+/* -------------------------- */
+.reviewcontainer {
+  margin: auto;
+  /* background-color: red; */
+  padding: 5rem 0;
+  width: 100%;
+}
+.reviewcontent {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.reviewcontent h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.reviewcontent p {
+  text-align: center;
+  width: 60%;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+.reviewplaces {
+  /* background-color: #65c0ba; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.reviewcontent-place h1 {
+  font-size: 20px;
+}
+.reviewplace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc((100 / 4) - 1rem);
+  padding: 2rem 0;
+  /* background-color: green; */
+}
+.reviewimg {
+  cursor: pointer;
+  width: 100%;
+  height: 30%;
+}
+.reviewimg img {
+  width: 100%;
+  height: 100%;
+}
+.reviewcontent-place {
+  width: 100%;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews .rating {
+  color: #65c0ba;
+}
+.reviews span {
+  color: #ccc;
+  font-style: italic;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+}
+/* ---------footer------------ */
+footer {
+  margin: auto;
+  width: 100%;
+  padding: 6rem;
+  background-color: #1a1a1a;
+}
+footer .footercontainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 3rem;
+}
+.footercontent {
+  width: calc((100% / 3) - 1.75rem);
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footercontent h3 {
+  color: #ffff;
+  font-weight: 300;
+}
+.footerlink {
+  margin-bottom: 1rem;
+}
+.footerlink li a {
+  cursor: pointer;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s all ease-in-out;
+}
+.footerlink li a:hover {
+  color: #fff;
+}
+.footercontent p {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footercontent p span:first-child {
+  font-style: italic;
+  color: #fff;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.footercontent p span:last-child {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footercontent > span {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footersubscribe input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem 0.5rem;
+  transition: 0.5s all ease-in-out;
+}
+.footersubscribe input::placeholder {
+  font-style: italic;
+  font-weight: 800;
+}
+.footersubscribe input:focus {
+  border-color: #fff;
+}
+.footersubscribe {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.footersubscribe span {
+  color: #fff;
+  position: absolute;
+  right: 11px;
+  bottom: 11px;
+}
+
+.footersocial {
+  color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footersocial p {
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 0.5rem;
+}
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.socialmedia i {
+  transition: 0.5s all ease-in-out;
+}
+.socialmedia i:hover {
+  color: #fff;
+}
+
+
